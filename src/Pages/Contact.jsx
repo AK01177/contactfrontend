@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Contact.css';
 
-const baseurl = "http://localhost:5000/api/contacts";
+const baseurl = import.meta.env.VITE_API_URL || "http://localhost:5000/api/contacts";
 
 // CreateForm Component
 const CreateForm = ({ onClose, onCreate }) => {
